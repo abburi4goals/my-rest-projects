@@ -27,4 +27,15 @@ jobs:
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
-        GITHUB_TOKEN: ${{ github.token }}
+        GITHUB_TOKEN: ${{ github.token }} 
+ 
+- uses: actions/checkout@v1
+
+- run: mkdir -p path/to/artifact
+
+- run: echo hello > path/to/artifact/world.txt
+
+- uses: actions/upload-artifact@v1
+  with:
+    name: my-artifact
+    path: path/to/artifact
