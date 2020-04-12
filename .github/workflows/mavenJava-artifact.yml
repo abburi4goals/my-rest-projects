@@ -26,5 +26,5 @@ jobs:
     - name: Download artifact
       uses: actions/download-artifact@v1.0.0
       with:
-        name:  restful-web-services
+        name:  restful-web-services-1.0.1-SNAPSHOT.war
         path:
