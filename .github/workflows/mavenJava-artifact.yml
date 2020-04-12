@@ -26,7 +26,5 @@ jobs:
     - name: Download artifact
       uses: actions/download-artifact@v1.0.0
       with:
-        myrest-webservices
-        name: 
-        /my-rest-projects/artifacts
-        path: # optional
+        name:  myrest-webservices
+        path:
